@@ -49,8 +49,8 @@ defineArray(index);
 function virar(id) {
 
     let div = document.getElementById(id);
-    let imagem = `<img class="mx-auto" src="/img/${idImg[id]}.png">`
-    const verso = `<img class="mx-auto" src="/img/verso.png">`
+    let imagem = `<img class="mx-auto" src="../img/${idImg[id]}.png">`
+    const verso = `<img class="mx-auto" src="../img/verso.png">`
     let validaPar = true;
 
     //se o clique não for em um par já aberto
