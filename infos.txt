@@ -1,0 +1,53 @@
+PARES, IMAGENS
+
+POSIÇÃO - RANDOM
+sortear os ids, 
+
+são 10 imagens, logo 20 posições
+sortear os numeros de 1 a 20 (posições) que não se repetem e atrelar por ordem de ID
+
+
+JSON:
+{
+  "imagens": [
+    {
+      "nome": "img01.png",
+      "posição": [random, random],
+      "id": 1
+    }
+  ]
+}
+
+
+1º Faz o sorteio
+2º Monta o front e exibe conforme ordem sorteada
+
+3º Exibir a imagem do verso, e ao clicar, aplicar transição que mostra a carta
+4º Só deixa virar duas imagens de cada vez
+
+5º Valida se as duas cartas formam um par (exibe uma mensagem de sucesso ou falha);
+6º Valida se o jogo acabou (numero de pares), aumenta contador de tentativas
+7º Desvira as cartas 
+REPETE
+
+tenho: array com os ids das imagens na verdade
+[]
+
+Virar as cartas:
+- se nao tiver nenhuma carta virada, eu viro a carta e adiciono o id no array
+- se tiver uma carta virada, valida se o clique foi no verso ou na frente
+   - se for no verso, vira a carta e adiciono o id no array 
+	- valida se formou um par
+   - se for na frente, desvira a carta e remove da lista
+- se tiver duas cartas ou mais, valida se o clique foi no verso ou na frente
+   - se for no verso, não faz nada
+   - se for na frente, desvira a carta e remove da lista
+
+Validar se é par:
+- se conteudo dentro do array é igual, é par
+
+Se achar um par:
+- aumenta o contador de pares
+- valida se acabou o jogo
+- não deixa mais clicar nessas divs
+
